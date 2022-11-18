@@ -1,0 +1,16 @@
+.header-bottom-center .header-nav-list ul li a{
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+.header-bottom-right input[type=text]{
+  color: #828282;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.header-bottom-right input[type=text]:focus{
+  outline: none;
+}
