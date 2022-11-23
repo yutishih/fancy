@@ -31,14 +31,14 @@ function Main() {
         </div>
       </div>
       <div className='section-container pb-6'>
-        <div>
-          <div className='column-6'>
+        <div className='flex'>
+          <div className='w-1/2 pr-6'>
             <div>
-              <img src={Product1} />
+              <img src={Product1} className='w-full' />
             </div>
           </div>
-          <div className='column-6'>
-            {/* <Carousel1 /> */}
+          <div className='w-1/2'>
+            <Carousel1 />
           </div>
         </div>
       </div>
