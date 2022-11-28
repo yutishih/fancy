@@ -1,8 +1,10 @@
 import React from "react";
 import Carousel from 'react-multi-carousel';
+import '../Carousels/Carousel.css';
 import 'react-multi-carousel/lib/styles.css';
 import Product2 from '../Carousels/CarouselImgs/product-2.png'
 import Product3 from '../Carousels/CarouselImgs/product-3.png'
+import Product4 from '../Carousels/CarouselImgs/product-4.png'
 
 const responsive = {
   desktop: {
@@ -94,22 +96,35 @@ class CarouselHalf1 extends React.Component {
       >
         <div className="image-container increase-size pr-2">
           <div className="card">
-            <img
-              draggable={false}
-              style={{ width: "100%", cursor: "pointer" }}
-              src={Product2}
-            />
+            <div className="card-cover">
+              <img
+                draggable={false}
+                style={{ width: "100%", cursor: "pointer" }}
+                src={Product2}
+              />
+            </div>
+            <div className="card-hover">
+              <img
+                draggable={false}
+                style={{ width: "100%", cursor: "pointer" }}
+                src={Product4}
+              />
+              <div className="card-action py-5">
+                <div><button className="cart p-3 text-lg">ADD TO CART</button></div>
+                <div><button className="wishlist p-3 text-sm">Add to wishlist</button></div>
+              </div>
+            </div>
           </div>
           <div class="image-container-text card-infomation">
-            <div className="card-info-group flex py-2">
-              <div className='card-vendor w-1/2'>
+            <div className="card-info-group flex pt-4 pb-2">
+              <div className='card-vendor w-1/2 text-xs'>
                 <a href='#'>Ella - Halothemes</a>
               </div>
               <div className="review w-1/2 text-right">
                 <span>stars</span>
               </div>
             </div>
-            <div className="product-name pb-3">
+            <div className="product-name pb-3 text-sm">
               <a href='#'>
                 <span>
                   (Product 8) Sample - Clothes And Accessories
@@ -120,6 +135,28 @@ class CarouselHalf1 extends React.Component {
             <div className="product-price flex">
               <span className="pr-2"><del>$99.00</del></span>
               <span className="text-red text-lg font-bold">$79.00</span>
+            </div>
+            <div className="product-color pt-2">
+              <ul className="flex">
+                <li className="pr-2">
+                  <div>
+                    <a>
+                      <label className="block w-7 h-7 rounded-full p-0.5 border-2 border-solid">
+                        <div className="bg-lightskyblue w-5 h-5 rounded-full"></div>
+                      </label>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a>
+                      <label className="block w-7 h-7 rounded-full p-0.5 border-2 border-solid">
+                        <div className="bg-palegreen w-5 h-5 rounded-full"></div>
+                      </label>
+                    </a>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
