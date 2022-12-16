@@ -111,7 +111,12 @@ class CarouselHalf1 extends React.Component {
               />
               <div className="card-action py-5">
                 <div><button className="cart p-3 text-lg">ADD TO CART</button></div>
-                <div><button className="wishlist p-3 text-sm">Add to wishlist</button></div>
+                <div>
+                  <button className="wishlist flex p-3 text-sm">
+                    <span class="material-symbols-rounded pr-3">favorite</span>
+                    <p>Add to wishlist</p>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -121,7 +126,13 @@ class CarouselHalf1 extends React.Component {
                 <a href='#'>Ella - Halothemes</a>
               </div>
               <div className="review w-1/2 text-right">
-                <span>stars</span>
+                <ul className="flex justify-end pr-2">
+                  <li><span class="material-symbols-rounded">star</span></li>
+                  <li><span class="material-symbols-rounded">star</span></li>
+                  <li><span class="material-symbols-rounded">star</span></li>
+                  <li><span class="material-symbols-rounded">star</span></li>
+                  <li><span class="material-symbols-rounded">star</span></li>
+                </ul>
               </div>
             </div>
             <div className="product-name pb-3 text-sm">

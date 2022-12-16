@@ -19,8 +19,8 @@
   background-color: #fff;
   position: absolute;
   width: 100%;
-  height: 13%;
-  bottom: 13%;
+  height: 120px;
+  bottom: 22%;
   text-align: center;
 }
 .image-container .card .card-hover .card-action .cart{
@@ -33,4 +33,13 @@
   border-radius: 2px;
   box-shadow: inset 1px 1px 10px 1px #808080;
   transition: all ease 0.3s;
+}
+.image-container .image-container-text .review ul li span{
+  font-size: 18px;
+}
+.image-container .wishlist{
+  margin: 0 auto;
+}
+.image-container .wishlist span{
+  font-size: 18px;
 }
