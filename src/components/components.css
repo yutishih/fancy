@@ -14,14 +14,17 @@
 .header-bottom-right input[type=text]:focus{
   outline: none;
 }
+.main .product-block-1 .video-block .play-icon{
+  top: 30%;
+  left: 40%;
+}
 .main .product-block-1 .video-block .play-icon a{
   background-color: rgba(0, 0, 0, 0.4);
-  top: 280%;
-  left: 20%;
 }
 .main .product-block-1 .video-block .text-block{
-  top: 300%;
-  left: 10%;
+  position: inherit;
+  top: 55%;
+  left: 20%;
 }
 .main .product-block-1 .video-block .text-block .text-button a{
   background: #ffffff;

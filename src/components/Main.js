@@ -32,15 +32,15 @@ function Main() {
       </div>
       <div className='section-container product-block-1 pb-6'>
         <div className='flex'>
-          <div className='w-1/2 pr-6'>
-            <div className='video-block'>
-              <img src={Product1} className='absolute w-1/2 pr-4' />
-              <div className='play-icon'>
+          <div className='relative w-1/2 pr-6'>
+            <div className='absolute video-block'>
+              <img src={Product1} className='w-full pr-4' />
+              <div className='play-icon absolute'>
                 <a className='absolute rounded-md'>
                   <span class="material-symbols-rounded text-9xl text-white">play_arrow</span>
                 </a>
               </div>
-              <div className='text-block absolute'>
+              <div className='text-block'>
                 <div className='text-center'>
                   <h2 className='text text-white text-xl'>New Collection</h2>
                   <h3 className='subtext text-6xl text-lightblue pt-8'>COLLEGEWEAR</h3>

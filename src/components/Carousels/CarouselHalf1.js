@@ -143,32 +143,36 @@ class CarouselHalf1 extends React.Component {
                 </span>
               </a>
             </div>
-            <div className="product-price flex">
-              <span className="pr-2"><del>$99.00</del></span>
-              <span className="text-red text-lg font-bold">$79.00</span>
+            
+            <div className="flex">
+              <div className="product-price flex w-1/2">
+                <span className="pr-2"><del>$99.00</del></span>
+                <span className="text-red text-lg font-bold">$79.00</span>
+              </div>
+              <div className="product-color w-1/2">
+                <ul className="flex justify-end pr-1">
+                  <li className="pr-2">
+                    <div>
+                      <a>
+                        <label className="block w-7 h-7 rounded-full p-0.5 border-2 border-solid">
+                          <div className="bg-lightskyblue w-5 h-5 rounded-full"></div>
+                        </label>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <a>
+                        <label className="block w-7 h-7 rounded-full p-0.5 border-2 border-solid">
+                          <div className="bg-palegreen w-5 h-5 rounded-full"></div>
+                        </label>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="product-color pt-2">
-              <ul className="flex">
-                <li className="pr-2">
-                  <div>
-                    <a>
-                      <label className="block w-7 h-7 rounded-full p-0.5 border-2 border-solid">
-                        <div className="bg-lightskyblue w-5 h-5 rounded-full"></div>
-                      </label>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <a>
-                      <label className="block w-7 h-7 rounded-full p-0.5 border-2 border-solid">
-                        <div className="bg-palegreen w-5 h-5 rounded-full"></div>
-                      </label>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            
           </div>
         </div>
 
