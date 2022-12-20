@@ -1,0 +1,17 @@
+.styles-block .image-container .wrapper span{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background-color: #232323;
+    left: 40%;
+    top: 45%;
+    font-size: 3.75rem;
+    border-radius: 3px;
+    opacity: 0;
+    transition: top .6s, opacity .6s;
+}
+.styles-block .image-container .wrapper:hover span{
+    top: 40%;
+    opacity: 1;
+}

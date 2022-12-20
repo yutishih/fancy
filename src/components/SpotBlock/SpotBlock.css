@@ -1,0 +1,17 @@
+.full-container .block-container .text-container{
+    top: 60%;
+    left: 25%;
+}
+.full-container .block-container .text-container a{
+    background: #ffffff;
+    color: #202020;
+    border: 1px solid #ffffff;
+    max-width: 180px;
+    margin: 0 auto;
+}
+.full-container .block-container .text-container a:hover{
+    color: #ffffff;
+    background: #8463d8;
+    border: 1px solid #8463d8;
+    transition: all ease 0.5s;
+}

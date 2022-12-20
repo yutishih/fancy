@@ -39,3 +39,6 @@
   border: 1px solid #8463d8;
   transition: all ease 0.5s;
 }
+.main .full-styles{
+  border-top: 1px #cecece solid;
+}

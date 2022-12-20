@@ -3,11 +3,17 @@ import Banner1 from '../images/banner-1.png'
 import Banner2 from '../images/banner-2.png'
 import Banner3 from '../images/banner-3.png'
 import Banner4 from '../images/banner-4.png'
+import Banner5 from '../images/banner-5.png'
+import Banner6 from '../images/banner-6.png'
 import Product1 from '../images/product-1.png'
 import Product12 from '../images/product-12.png'
-import Carousel1 from '../components/Carousels/CarouselHalf1'
-import Carousel2 from '../components/Carousels/CarouselHalf2'
-import CarouselFull from '../components/Carousels/CarouselFull'
+import Carousel1 from './Carousels/CarouselHalf1'
+import Carousel2 from './Carousels/CarouselHalf2'
+import CarouselFull from './Carousels/CarouselFull'
+import CarouselFull2 from './Carousels/CarouselFull2'
+import SpotBlock1 from './SpotBlock/SpotBlock1'
+import SpotBlock2 from './SpotBlock/SpotBlock2'
+import StylesBlock from './StylesBlock/StylesBlock'
 
 function Main() {
   return (
@@ -114,6 +120,54 @@ function Main() {
           </a>
         </div>
       </div>
+
+      <div className='section-container pb-2'>
+        <div>
+          <SpotBlock1 />
+        </div>
+      </div>
+
+      <div className='section-container pb-6'>
+        <div>
+          <SpotBlock2 />
+        </div>
+      </div>
+
+      <div className='section-container pb-6'>
+        <div>
+          <a>
+            <img  className='w-full' src={Banner5} />
+          </a>
+        </div>
+      </div>
+
+      <div className='section-container pb-12'>
+        <div className='full-carousel w-full px-2'>
+          <div className='pb-4'>
+            <h3 className='text-center text-3xl'><span>NEW ARRIVAL</span></h3>
+          </div>
+          <CarouselFull2 />
+        </div>
+      </div>
+
+      <div className='section-container pb-8'>
+        <div className='full-styles w-full pt-8 px-2'>
+          <div className='pb-4'>
+            <h3 className='text-center text-3xl'><span>SHARE YOUR STYLE</span></h3>
+          </div>
+            <StylesBlock />
+        </div>
+      </div>
+
+      <div className='section-container pb-6'>
+        <div>
+          <a>
+            <img  className='w-full' src={Banner6} />
+          </a>
+        </div>
+      </div>
+
+
 
     </div>
   )
