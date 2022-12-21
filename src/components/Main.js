@@ -14,6 +14,9 @@ import CarouselFull2 from './Carousels/CarouselFull2'
 import SpotBlock1 from './SpotBlock/SpotBlock1'
 import SpotBlock2 from './SpotBlock/SpotBlock2'
 import StylesBlock from './StylesBlock/StylesBlock'
+import News from './News'
+import About from './About'
+import Footer from './Footer'
 
 function Main() {
   return (
@@ -167,7 +170,29 @@ function Main() {
         </div>
       </div>
 
+      <div className='section-container pb-12'>
+        <div className='news-section w-full px-2'>
+          <div className='pb-4'>
+            <h3 className='text-center text-3xl'><span>ELLA NEWS</span></h3>
+          </div>
+          <News />
+        </div>
+      </div>
 
+      <div className='section-container pb-12'>
+        <div className='about-section w-full px-2'>
+          <div className='pb-4'>
+            <h3 className='text-center text-3xl'><span>ABOUT ELLA</span></h3>
+          </div>
+          <About />
+        </div>
+      </div>
+
+      <div className='section-container'>
+        <div className='footer-section'>
+          <Footer />
+        </div>
+      </div>
 
     </div>
   )

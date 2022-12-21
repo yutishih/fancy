@@ -42,3 +42,51 @@
 .main .full-styles{
   border-top: 1px #cecece solid;
 }
+.main .news-container .text-container a{
+  border-bottom: 2px #3c3c3c solid;
+}
+.main .news-section{
+  padding-bottom: 2rem;
+  border-bottom: 1px #cecece solid;
+  color: #202020;
+}
+.main .news-section .text-container p{
+  margin: 0 auto;
+  width: 1000px;
+}
+.main .about-container .contact-container .item img{
+  margin: 0 auto;
+}
+.main .footer-wrapper .left-section{
+  border-right: 1px #505050 solid;
+}
+.main .footer-wrapper .left-section .signup .email-input{
+  border: 1px #fff solid;
+}
+.main .footer-wrapper .left-section .signup .email-input input{
+  background-color: #1a1a1a;
+  padding: 21px 15px;
+  width: 80%;
+  color: #fff;
+}
+.main .footer-wrapper .left-section .signup .email-input input:focus{
+  outline: none !important;
+}
+.main .footer-wrapper .left-section .signup .email-input .submit-button{
+  width: 20%;
+}
+.main .footer-wrapper .left-section .signup .email-input input::placeholder{
+  color: #969696;
+}
+.main .footer-wrapper .left-section .signup .privacy input[type="checkbox"]{
+  width: 25px; 
+}
+.main .footer-wrapper .right-section .list-wrapper{
+  padding: 0 2rem;
+}
+.main .footer-wrapper .right-section ul li{
+  padding-top: 1rem;
+}
+.main .footer-wrapper .right-section ul li:hover{
+  text-decoration: underline;
+}
