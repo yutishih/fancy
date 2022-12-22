@@ -1,4 +1,5 @@
 import React from 'react'
+import { SocialIcon } from 'react-social-icons';
 
 function Footer() {
   return (
@@ -16,11 +17,20 @@ function Footer() {
                         </div>
                         <div className='privacy flex pt-4'>
                             <input type="checkbox"></input>
+                            
                             <p className='text-bronze pt-1 pl-4 w-4/5'>By providing your email, you consent to our <span className='underline'>Privacy Policy</span> and <span className='underline'>Terms & Conditions</span>.</p>
                         </div>
                     </div>
                     <div className='social'>
                         <div className='text text-center text-white text-xl pt-12 pb-4'>FOLLOW US</div>
+                        <div>
+                            <ul className='flex place-content-center'>
+                                <li className='px-2'><SocialIcon network="facebook" bgColor="#111" fgColor="#fff" /></li>
+                                <li className='px-2'><SocialIcon network="instagram" bgColor="#111" fgColor="#fff" /></li>
+                                <li className='px-2'><SocialIcon network="twitter" bgColor="#111" fgColor="#fff" /></li>
+                                <li className='px-2'><SocialIcon network="pinterest" bgColor="#111" fgColor="#fff" /></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
