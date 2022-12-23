@@ -1,3 +1,6 @@
+.hide{
+  display: none;
+}
 .header-bottom-center .header-nav-list ul li a{
   padding-right: 20px;
   text-transform: uppercase;
@@ -89,4 +92,23 @@
 }
 .main .footer-wrapper .right-section ul li:hover{
   text-decoration: underline;
+}
+
+.header-wrapper .drop-down{
+  border-top: 1px #cecece solid;
+}
+.header-wrapper .drop-down p{
+  font-size: 14px;
+  color: #505050;
+}
+.header-wrapper .drop-down ul li{
+  padding: 6px 0;
+  color: #505050;
+  font-size: 14px;
+}
+.header-wrapper .drop-down ul li:hover a{
+  text-decoration: underline;
+}
+.drop-down-wrapper-1{
+  transition: display 0.3ms;
 }

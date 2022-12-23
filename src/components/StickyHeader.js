@@ -1,8 +1,21 @@
 import React from 'react'
+import {useState} from 'react'
 import '../components/components.css'
 import Logo from '../images/logo.jpg'
 
 function StickyHeader() {
+
+  const [isShown, setIsShown] = useState(false);
+
+  const shownHandler = () => {
+    if(isShown == false){
+      setIsShown(true);
+    }else{
+      setIsShown(false);
+    }
+  }
+
+
   return (
     <div className='header-wrapper relative block h-32'>
       <div className='header'>
@@ -41,7 +54,7 @@ function StickyHeader() {
             <div className='header-bottom-center pl-12'>
               <div className='header-nav-list'>
                 <ul className='flex space-x-2 text-sm font-medium'>
-                  <li><a><span>Theme Demo</span></a></li>
+                  <li><a onMouseEnter={shownHandler}><span>Theme Demo</span></a></li>
                   <li><a><span>Shop</span></a></li>
                   <li><a><span>Product</span></a></li>
                   <li><a><span>Blog</span></a></li>
@@ -59,7 +72,64 @@ function StickyHeader() {
             <button className='bg-black px-2 pt-2 pb-1'><span class="material-symbols-rounded text-white">search</span></button>
           </div>
         </div>
-        <div className='header-mobile-wrapper'></div>
+        <div className='drop-down'>
+          <div className='drop-down-container mb-4'>
+            {isShown && (
+              <div className='drop-down-wrapper-1 flex bg-white pb-6' onMouseLeave={shownHandler}>
+                <div className='list-wrapper w-1/5 p-4'>
+                  <p className='py-4'>HOMEPAGES</p>
+                  <ul>
+                    <li><a>Home 01 - Classic</a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                  </ul>
+                </div>
+                <div className='list-wrapper w-1/5 p-4'>
+                  <p className='py-4'>HOMEPAGES</p>
+                  <ul>
+                    <li><a>Home 01 - Classic</a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                  </ul>
+                </div>
+                <div className='list-wrapper w-1/5 p-4'>
+                  <p className='py-4'>HOMEPAGES</p>
+                  <ul>
+                    <li><a>Home 01 - Classic</a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                  </ul>
+                </div>
+                <div className='list-wrapper w-1/5 p-4'>
+                  <p className='py-4'>HOMEPAGES</p>
+                  <ul>
+                    <li><a>Home 01 - Classic</a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                  </ul>
+                </div>
+                <div className='list-wrapper w-1/5 p-4'>
+                  <p className='py-4'>HOMEPAGES</p>
+                  <ul>
+                    <li><a>Home 01 - Classic</a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                    <li><a>Home 02 - Trendy Style </a></li>
+                  </ul>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   )
