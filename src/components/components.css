@@ -109,6 +109,22 @@
 .header-wrapper .drop-down ul li:hover a{
   text-decoration: underline;
 }
-.drop-down-wrapper-1{
-  transition: display 0.3ms;
+.header-wrapper .header-nav-list .submenu-1{
+  top: 128px;
+  left: 390px;
+  width: 220px;
+  box-shadow: 0 1px 4px #00000026;
+  padding-top: 5px;
+}
+.header-wrapper .header-nav-list .submenu-1 li{
+  padding: 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+.header-wrapper .header-nav-list .submenu-1 li a{
+  color: #505050;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.header-wrapper .header-nav-list .submenu-1 li a:hover{
+  text-decoration: underline;
 }

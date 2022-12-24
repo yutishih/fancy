@@ -5,13 +5,39 @@ import Logo from '../images/logo.jpg'
 
 function StickyHeader() {
 
-  const [isShown, setIsShown] = useState(false);
+  const [isShown1, setIsShown1] = useState(false);
 
-  const shownHandler = () => {
-    if(isShown == false){
-      setIsShown(true);
+  const shownHandler1 = () => {
+    if(isShown1 === false){
+      setIsShown1(true);
+      setIsShown2(false);
+      setIsShown3(false);
     }else{
-      setIsShown(false);
+      setIsShown1(false);
+    }
+  }
+
+  const [isShown2, setIsShown2] = useState(false);
+
+  const shownHandler2 = () => {
+    if(isShown2 === false){
+      setIsShown2(true);
+      setIsShown1(false);
+      setIsShown3(false);
+    }else{
+      setIsShown2(false);
+    }
+  }
+
+  const [isShown3, setIsShown3] = useState(false);
+
+  const shownHandler3 = () => {
+    if(isShown3 === false){
+      setIsShown3(true);
+      setIsShown1(false);
+      setIsShown2(false);
+    }else{
+      setIsShown3(false);
     }
   }
 
@@ -53,10 +79,22 @@ function StickyHeader() {
             </div>
             <div className='header-bottom-center pl-12'>
               <div className='header-nav-list'>
-                <ul className='flex space-x-2 text-sm font-medium'>
-                  <li><a onMouseEnter={shownHandler}><span>Theme Demo</span></a></li>
-                  <li><a><span>Shop</span></a></li>
-                  <li><a><span>Product</span></a></li>
+                <ul className='menu flex space-x-2 text-sm font-medium'>
+                  <li><a onMouseEnter={shownHandler1}><span>Theme Demo</span></a></li>
+                  <li><a onMouseEnter={shownHandler2}><span>Shop</span></a></li>
+                  <li>
+                    <a onMouseEnter={shownHandler3}><span>Product</span></a>
+                    <ul className={'submenu-1 bg-white absolute' + (isShown3 ? " ":" hide")} onMouseLeave={shownHandler3}>
+                      <li><a>Blog Default</a></li>
+                      <li><a>Blog Default</a></li>
+                      <li><a>Blog Default</a></li>
+                      <li><a>Blog Default</a></li>
+                      <li><a>Blog Default</a></li>
+                      <li><a>Blog Default</a></li>
+                      <li><a>Blog Default</a></li>
+                      <li><a>Blog Default</a></li>
+                    </ul>
+                  </li>
                   <li><a><span>Blog</span></a></li>
                   <li><a><span>Pages</span></a></li>
                   <li><a><span>New In</span></a></li>
@@ -74,60 +112,70 @@ function StickyHeader() {
         </div>
         <div className='drop-down'>
           <div className='drop-down-container mb-4'>
-            {isShown && (
-              <div className='drop-down-wrapper-1 flex bg-white pb-6' onMouseLeave={shownHandler}>
-                <div className='list-wrapper w-1/5 p-4'>
-                  <p className='py-4'>HOMEPAGES</p>
-                  <ul>
-                    <li><a>Home 01 - Classic</a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                  </ul>
-                </div>
-                <div className='list-wrapper w-1/5 p-4'>
-                  <p className='py-4'>HOMEPAGES</p>
-                  <ul>
-                    <li><a>Home 01 - Classic</a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                  </ul>
-                </div>
-                <div className='list-wrapper w-1/5 p-4'>
-                  <p className='py-4'>HOMEPAGES</p>
-                  <ul>
-                    <li><a>Home 01 - Classic</a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                  </ul>
-                </div>
-                <div className='list-wrapper w-1/5 p-4'>
-                  <p className='py-4'>HOMEPAGES</p>
-                  <ul>
-                    <li><a>Home 01 - Classic</a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                  </ul>
-                </div>
-                <div className='list-wrapper w-1/5 p-4'>
-                  <p className='py-4'>HOMEPAGES</p>
-                  <ul>
-                    <li><a>Home 01 - Classic</a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                    <li><a>Home 02 - Trendy Style </a></li>
-                  </ul>
-                </div>
+            <div className={'drop-down-wrapper-1 flex bg-white pb-6'+(isShown1 ? " " : " hide")} onMouseLeave={shownHandler1}>
+              <div className='list-wrapper w-1/5 p-4'>
+                <p className='py-4'>HOMEPAGES</p>
+                <ul>
+                  <li><a>Home 01 - Classic</a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                </ul>
               </div>
-            )}
+              <div className='list-wrapper w-1/5 p-4'>
+                <p className='py-4'>HOMEPAGES</p>
+                <ul>
+                  <li><a>Home 01 - Classic</a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                </ul>
+              </div>
+              <div className='list-wrapper w-1/5 p-4'>
+                <p className='py-4'>HOMEPAGES</p>
+                <ul>
+                  <li><a>Home 01 - Classic</a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                </ul>
+              </div>
+              <div className='list-wrapper w-1/5 p-4'>
+                <p className='py-4'>HOMEPAGES</p>
+                <ul>
+                  <li><a>Home 01 - Classic</a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                </ul>
+              </div>
+              <div className='list-wrapper w-1/5 p-4'>
+                <p className='py-4'>HOMEPAGES</p>
+                <ul>
+                  <li><a>Home 01 - Classic</a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                </ul>
+              </div>
+            </div>
+            <div className={'drop-down-wrapper-2 flex bg-white pb-6'+(isShown2 ? " " : " hide")} onMouseLeave={shownHandler2}>
+              <div className='list-wrapper w-1/5 p-4'>
+                <p className='py-4'>HOMEPAGES</p>
+                <ul>
+                  <li><a>Home 01 - Classic</a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                  <li><a>Home 02 - Trendy Style </a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
