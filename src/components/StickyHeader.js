@@ -2,6 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import '../components/components.css'
 import Logo from '../images/logo.jpg'
+import MobileMenu from './MobileMenu';
 
 function StickyHeader() {
 
@@ -43,7 +44,7 @@ function StickyHeader() {
 
 
   return (
-    <div className='header-wrapper relative block h-32'>
+    <div className='header-wrapper relative block'>
       <div className='header'>
         <div className='header-top-wrapper bg-black flex flex-nowrap justify-between items-center'>
           <div className='header-top-left block relative text-left'>
@@ -110,6 +111,7 @@ function StickyHeader() {
             <button className='bg-black px-2 pt-2 pb-1'><span class="material-symbols-rounded text-white">search</span></button>
           </div>
         </div>
+        <MobileMenu />
         <div className='drop-down'>
           <div className='drop-down-container mb-4'>
             <div className={'drop-down-wrapper-1 flex bg-white pb-6'+(isShown1 ? " " : " hide")} onMouseLeave={shownHandler1}>

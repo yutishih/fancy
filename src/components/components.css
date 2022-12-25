@@ -1,6 +1,12 @@
 .hide{
   display: none;
 }
+.header-bottom-wrapper{
+  display: flex;
+}
+.header-mobile{
+  display: none;
+}
 .header-bottom-center .header-nav-list ul li a{
   padding-right: 20px;
   text-transform: uppercase;
@@ -93,7 +99,9 @@
 .main .footer-wrapper .right-section ul li:hover{
   text-decoration: underline;
 }
-
+.header-wrapper{
+  height: 8rem;
+}
 .header-wrapper .drop-down{
   border-top: 1px #cecece solid;
 }
@@ -127,4 +135,36 @@
 }
 .header-wrapper .header-nav-list .submenu-1 li a:hover{
   text-decoration: underline;
+}
+
+.header-mobile .dropdown-mobile .dropdown-inner ul li{
+  padding: 10px 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+.header-mobile .dropdown-mobile .dropdown-inner ul li a{
+  font-size: 18px;
+}
+.header-mobile .dropdown-mobile .dropdown-inner .dropdown-bottom{
+  padding: 10px 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/*Responsive App CSS*/
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+  .header-wrapper{
+    height: 7rem;
+  }
+  .header-bottom-wrapper{
+    display: none;
+  }
+  .header-mobile{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
 }
