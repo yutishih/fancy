@@ -163,6 +163,21 @@
   .header-mobile{
     display: block;
   }
+  .header-top-right{
+    display: none;
+  }
+  .main .subtext{
+    font-size: 24px;
+  }
+  .footer-inner{
+    display: block;
+  }
+  .footer-inner .left-section{
+    width: 100%;
+  }
+  .footer-inner .right-section{
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {

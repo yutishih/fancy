@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 function Footer() {
   return (
     <div className='footer-wrapper bg-black py-12'>
-        <div className='flex'>
+        <div className='footer-inner flex'>
             <div className='left-section w-1/2 flex place-content-center mt-8'>
                 <div>
                     <div className='signup'>

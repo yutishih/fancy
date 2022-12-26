@@ -39,7 +39,7 @@ function MobileMenu() {
             </div>
         </div>
         <div className={"dropdown-mobile" + ( toggleOn ? " " : " hide" )}>
-            <div className='dropdown-inner absolute w-4/5 h-screen bg-white z-10'>
+            <div className='dropdown-inner absolute w-4/5 top-0 h-screen bg-white z-10'>
                 <div className='menu-header flex justify-between py-2 px-4'>
                     <div className='header text-2xl'>Menu</div>
                     <div className='close' onClick={toggleHandler}>

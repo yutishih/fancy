@@ -7,7 +7,7 @@ import Block8 from "../SpotBlock/BlockImages/block-8.png"
 
 function SpotBlock1() {
   return (
-    <div>
+    <div className='spotblock-wrapper'>
         <div className='full-container flex'>
             <div className='block-container relative w-1/4 px-1'>
                 <div className='image-container'>
