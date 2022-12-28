@@ -17,14 +17,23 @@ import StylesBlock from './StylesBlock/StylesBlock'
 import News from './News'
 import About from './About'
 import Footer from './Footer'
+import mobile1 from '../images/mobile-1.png'
+import mobile2 from '../images/mobile-2.png'
+import mobile3 from '../images/mobile-3.png'
+import mobile4 from '../images/mobile-4.png'
+import mobile5 from '../images/mobile-5.png'
+import mobile6 from '../images/mobile-6.png'
 
 function Main() {
   return (
     <div className='main'>
       <div className='section-container'>
         <div>
-          <a>
+          <a className='desktop-image'>
             <img  className='w-full' src={Banner1} />
+          </a>
+          <a className='mobile-image'>
+            <img  className='w-full' src={mobile1} />
           </a>
         </div>
       </div>
@@ -39,26 +48,24 @@ function Main() {
       </div>
       <div className='section-container pb-6'>
         <div>
-          <a>
+          <a className='desktop-image'>
             <img  className='w-full' src={Banner2} />
+          </a>
+          <a className='mobile-image'>
+            <img  className='w-full' src={mobile2} />
           </a>
         </div>
       </div>
 
       <div className='section-container product-block-1 pb-6'>
-        <div className='flex'>
-          <div className='relative w-1/2 pr-6'>
-            <div className='absolute video-block'>
-              <img src={Product1} className='w-full pr-4' />
-              <div className='play-icon absolute'>
-                <a className='absolute rounded-md'>
-                  <span class="material-symbols-rounded text-9xl text-white">play_arrow</span>
-                </a>
-              </div>
+        <div className='flex max-md:block'>
+          <div className='relative w-1/2 max-md:w-full pr-6 max-md:p-0'>
+            <div className='absolute max-md:relative video-block'>
+              <img src={Product1} className='w-full pr-4 max-md:pr-0 max-md:pb-4' />
               <div className='text-block'>
                 <div className='text-center'>
-                  <h2 className='text text-white text-xl'>New Collection</h2>
-                  <h3 className='subtext text-6xl text-lightblue pt-8'>COLLEGEWEAR</h3>
+                  <h2 className='text text-black text-xl'>New Collection</h2>
+                  <h3 className='subtext text-6xl text-yellow pt-8'>COLLEGEWEAR</h3>
                   <div className='text-button h-12 pt-12'>
                     <a className='px-12 py-4'>SHOP NOW</a>
                   </div>
@@ -66,29 +73,24 @@ function Main() {
               </div>
             </div>
           </div>
-          <div className='w-1/2'>
+          <div className='w-1/2 max-md:w-full max-md:px-1'>
             <Carousel1 />
           </div>
         </div>
       </div>
 
-      <div className='section-container product-block-1 pl-2 pb-10'>
-        <div className='flex'>
-          <div className='w-1/2 pr-3'>
+      <div className='section-container product-block-1 pb-10 max-md:pb-4'>
+        <div className='flex max-md:block'>
+          <div className='w-1/2 max-md:w-full max-md:px-1 max-md:pb-4'>
             <Carousel2 />
           </div>
-          <div className='relative w-1/2'>
-            <div className='absolute video-block'>
-              <img src={Product12} className='w-full' />
-              <div className='play-icon absolute'>
-                <a className='absolute rounded-md'>
-                  <span class="material-symbols-rounded text-9xl text-white">play_arrow</span>
-                </a>
-              </div>
+          <div className='relative w-1/2 max-md:w-full pr-6 max-md:p-0'>
+            <div className='absolute max-md:relative video-block'>
+              <img src={Product12} className='w-full pr-4 max-md:pr-0 max-md:pb-4' />
               <div className='text-block'>
                 <div className='text-center'>
-                  <h2 className='text text-white text-xl'>Swimsuit Collection</h2>
-                  <h3 className='subtext text-6xl text-lightblue pt-8'>SUMMER’NOW</h3>
+                  <h2 className='text text-black text-xl'>Swimsuit Collection</h2>
+                  <h3 className='subtext text-6xl text-yellow pt-8'>SUMMER’NOW</h3>
                   <div className='text-button h-12 pt-12'>
                     <a className='px-12 py-4'>SHOP NOW</a>
                   </div>
@@ -101,8 +103,11 @@ function Main() {
 
       <div className='section-container pb-6'>
         <div>
-          <a>
+          <a className='desktop-image'>
             <img  className='w-full' src={Banner3} />
+          </a>
+          <a className='mobile-image'>
+            <img  className='w-full' src={mobile3} />
           </a>
         </div>
       </div>
@@ -110,7 +115,7 @@ function Main() {
       <div className='section-container pb-8'>
         <div className='full-carousel w-full px-2'>
           <div className='pb-4'>
-            <h3 className='text-center text-3xl'><span>FLASH SALE</span></h3>
+            <h3 className='text-center text-3xl max-md:text-xl'><span>FLASH SALE</span></h3>
           </div>
           <CarouselFull />
         </div>
@@ -118,13 +123,16 @@ function Main() {
 
       <div className='section-container pb-6'>
         <div>
-          <a>
+          <a className='desktop-image'>
             <img  className='w-full' src={Banner4} />
+          </a>
+          <a className='mobile-image'>
+            <img  className='w-full' src={mobile4} />
           </a>
         </div>
       </div>
 
-      <div className='section-container pb-2'>
+      <div className='section-container pb-2 max-md:pb-0'>
         <div>
           <SpotBlock1 />
         </div>
@@ -138,8 +146,11 @@ function Main() {
 
       <div className='section-container pb-6'>
         <div>
-          <a>
+          <a className='desktop-image'>
             <img  className='w-full' src={Banner5} />
+          </a>
+          <a className='mobile-image'>
+            <img  className='w-full' src={mobile5} />
           </a>
         </div>
       </div>
@@ -147,7 +158,7 @@ function Main() {
       <div className='section-container pb-12'>
         <div className='full-carousel w-full px-2'>
           <div className='pb-4'>
-            <h3 className='text-center text-3xl'><span>NEW ARRIVAL</span></h3>
+            <h3 className='text-center text-3xl max-md:text-xl'><span>NEW ARRIVAL</span></h3>
           </div>
           <CarouselFull2 />
         </div>
@@ -156,7 +167,7 @@ function Main() {
       <div className='section-container pb-8'>
         <div className='full-styles w-full pt-8 px-2'>
           <div className='pb-4'>
-            <h3 className='text-center text-3xl'><span>SHARE YOUR STYLE</span></h3>
+            <h3 className='text-center text-3xl max-md:text-xl'><span>SHARE YOUR STYLE</span></h3>
           </div>
             <StylesBlock />
         </div>
@@ -164,8 +175,11 @@ function Main() {
 
       <div className='section-container pb-6'>
         <div>
-          <a>
+          <a className='desktop-image'>
             <img  className='w-full' src={Banner6} />
+          </a>
+          <a className='mobile-image'>
+            <img  className='w-full' src={mobile6} />
           </a>
         </div>
       </div>
@@ -173,7 +187,7 @@ function Main() {
       <div className='section-container pb-12'>
         <div className='news-section w-full px-2'>
           <div className='pb-4'>
-            <h3 className='text-center text-3xl'><span>ELLA NEWS</span></h3>
+            <h3 className='text-center text-3xl max-md:text-xl'><span>ELLA NEWS</span></h3>
           </div>
           <News />
         </div>
@@ -182,7 +196,7 @@ function Main() {
       <div className='section-container pb-12'>
         <div className='about-section w-full px-2'>
           <div className='pb-4'>
-            <h3 className='text-center text-3xl'><span>ABOUT ELLA</span></h3>
+            <h3 className='text-center text-3xl max-md:text-xl'><span>ABOUT ELLA</span></h3>
           </div>
           <About />
         </div>

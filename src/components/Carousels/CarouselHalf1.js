@@ -20,7 +20,7 @@ const responsive = {
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 1
+    items: 2
   }
 };
 
@@ -85,7 +85,7 @@ class CarouselHalf1 extends React.Component {
         customButtonGroup={<CustomSlider />}
         itemClass="slider-image-item"
         responsive={responsive}
-        infinite={false}
+        infinite={true}
         containerClass="carousel-container-with-scrollbar"
         additionalTransfrom={-this.state.additionalTransfrom}
         beforeChange={nextSlide => {

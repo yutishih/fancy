@@ -1,4 +1,23 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .hide{
+  display: none;
+}
+.desktop{
+  display: flex;
+}
+.mobile{
+  display: none;
+}
+.mobile-block{
+  display: none;
+}
+.desktop-image{
+  display: block;
+}
+.mobile-image{
   display: none;
 }
 .header-bottom-wrapper{
@@ -23,17 +42,11 @@
 .header-bottom-right input[type=text]:focus{
   outline: none;
 }
-.main .product-block-1 .video-block .play-icon{
-  top: 30%;
-  left: 40%;
-}
-.main .product-block-1 .video-block .play-icon a{
-  background-color: rgba(0, 0, 0, 0.4);
-}
 .main .product-block-1 .video-block .text-block{
-  position: inherit;
-  top: 55%;
-  left: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .main .product-block-1 .video-block .text-block .text-button a{
   background: #ffffff;
@@ -181,5 +194,33 @@
 }
 
 @media only screen and (max-width: 768px) {
-
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: flex;
+  }
+  .mobile-block{
+    display: block;
+  }
+  .desktop-image{
+    display: none;
+  }
+  .mobile-image{
+    display: block;
+  }
+  .product-color{
+    display: none;
+  }
+  .main .about-container .contact-container .item img{
+    width: 24px;
+    margin: 0;
+  }
+  .about-container .item-wrapper-mobile{
+    margin: 0 20%;
+  }
+  .main .footer-wrapper .left-section .signup .email-input input{
+    padding: 10px;
+  }
+  
 }

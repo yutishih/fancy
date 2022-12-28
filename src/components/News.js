@@ -7,7 +7,7 @@ import News4 from '../images/news-4.png'
 function News() {
   return (
     <div>
-        <div className='flex'>
+        <div className='desktop flex'>
             <div className='news-container pr-2'>
                 <div className='image-container'>
                     <img src={News1} />
@@ -40,7 +40,32 @@ function News() {
                     <a>LEARN MORE</a>
                 </div>
             </div>
-            
+        </div>
+        <div className='mobile-block'>
+            <div className='flex'>
+                <div className='news-container p-1'>
+                    <div className='image-container'>
+                        <img src={News1} />
+                    </div>
+                </div>
+                <div className='news-container p-1'>
+                    <div className='image-container'>
+                        <img src={News2} />
+                    </div>
+                </div>
+            </div>
+            <div className='flex'>
+                <div className='news-container p-1'>
+                    <div className='image-container'>
+                        <img src={News3} />
+                    </div>
+                </div>
+                <div className='news-container p-1'>
+                    <div className='image-container'>
+                        <img src={News4} />
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   )

@@ -8,7 +8,7 @@ import Block4 from "../SpotBlock/BlockImages/block-4.png"
 function SpotBlock1() {
   return (
     <div className='spotblock-wrapper'>
-        <div className='full-container flex'>
+        <div className='full-container desktop flex'>
             <div className='block-container relative w-1/4 px-1'>
                 <div className='image-container'>
                     <img src={Block1} />
@@ -41,8 +41,44 @@ function SpotBlock1() {
                     <a className='px-12 py-4 text-xl'>DRESSES</a>
                 </div>
             </div>
-
-
+        </div>
+        <div className='full-container mobile-block'>
+            <div className='flex'>
+                <div className='block-container relative w-1/2 px-1 py-1'>
+                    <div className='image-container'>
+                        <img src={Block1} />
+                    </div>
+                    <div className='text-container absolute text-center'>
+                        <a className='px-12 py-4 text-xl'>TOPS</a>
+                    </div>
+                </div>
+                <div className='block-container relative w-1/2 px-1 py-1'>
+                    <div className='image-container'>
+                        <img src={Block2} />
+                    </div>
+                    <div className='text-container absolute text-center'>
+                        <a className='px-12 py-4 text-xl'>BOTTOMS</a>
+                    </div>
+                </div>
+            </div>
+            <div className='flex'>
+                <div className='block-container relative w-1/2 px-1 py-1'>
+                    <div className='image-container'>
+                        <img src={Block3} />
+                    </div>
+                    <div className='text-container absolute text-center'>
+                        <a className='px-12 py-4 text-xl'>CAUSAL</a>
+                    </div>
+                </div>
+                <div className='block-container relative w-1/2 px-1 py-1'>
+                    <div className='image-container'>
+                        <img src={Block4} />
+                    </div>
+                    <div className='text-container absolute text-center'>
+                        <a className='px-12 py-4 text-xl'>DRESSES</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   )

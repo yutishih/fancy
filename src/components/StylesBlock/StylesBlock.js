@@ -11,7 +11,7 @@ import Styles7 from "./StylesImages/styles-7.png"
 function StylesBlock() {
   return (
     <div>
-        <div className='styles-block flex'>
+        <div className='styles-block desktop flex'>
             <div>
                 <div className='image-container flex'>
                     <div className='wrapper relative p-1'>
@@ -53,6 +53,63 @@ function StylesBlock() {
                 </div>
             </div>
             <div>
+                <div className='image-container'>
+                    <div className='wrapper relative p-1'>
+                        <a>
+                            <img src={Styles6} />
+                            <span class="material-symbols-rounded">add</span>
+                        </a>
+                    </div>
+                    <div className='wrapper relative p-1'>
+                        <a>
+                            <img src={Styles7} />
+                            <span class="material-symbols-rounded">add</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className='styles-block mobile-block flex'>
+            <div>
+                <div className='image-container flex'>
+                    <div className='wrapper relative p-1'>
+                        <a>
+                            <img src={Styles1} />
+                            <span class="material-symbols-rounded">add</span>
+                        </a>
+                    </div>
+                    <div className='wrapper relative p-1'>
+                        <a>
+                            <img src={Styles2} />
+                            <span class="material-symbols-rounded">add</span>
+                        </a>
+                    </div>
+                </div>
+                <div className='image-container flex'>
+                    <div className='wrapper relative p-1'>
+                        <a>
+                            <img src={Styles3} />
+                            <span class="material-symbols-rounded">add</span>
+                        </a>
+                    </div>
+                    <div className='wrapper relative p-1'>
+                        <a>
+                            <img src={Styles4} />
+                            <span class="material-symbols-rounded">add</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className='flex'>
+                <div className='image-container'>
+                    <div className='wrapper relative p-1'>
+                        <a>
+                            <img src={Styles5} />
+                            <span class="material-symbols-rounded">add</span>
+                        </a>
+                    </div>
+                </div>
                 <div className='image-container'>
                     <div className='wrapper relative p-1'>
                         <a>

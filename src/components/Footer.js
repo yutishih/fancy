@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className='footer-wrapper bg-black py-12'>
         <div className='footer-inner flex'>
-            <div className='left-section w-1/2 flex place-content-center mt-8'>
+            <div className='left-section w-1/2 flex place-content-center mt-8 max-md:px-4'>
                 <div>
                     <div className='signup'>
                         <div className='text text-center text-white text-xl pb-4'>SIGN UP FOR NEWSLETTER</div>
@@ -18,7 +18,7 @@ function Footer() {
                         <div className='privacy flex pt-4'>
                             <input type="checkbox"></input>
                             
-                            <p className='text-bronze pt-1 pl-4 w-4/5'>By providing your email, you consent to our <span className='underline'>Privacy Policy</span> and <span className='underline'>Terms & Conditions</span>.</p>
+                            <p className='text-bronze pt-1 pl-4 w-4/5 max-md:text-sm'>By providing your email, you consent to our <span className='underline'>Privacy Policy</span> and <span className='underline'>Terms & Conditions</span>.</p>
                         </div>
                     </div>
                     <div className='social'>
@@ -73,7 +73,7 @@ function Footer() {
                 </div>
             </div>
         </div>
-        <div className='bottom pt-16'>
+        <div className='bottom pt-16 max-md:px-2'>
             <div className='text-center text-brown text-sm'>© 2022 Ella Demo. Powaered By Shopify. Shopify Themes & Templates By HaloThemes.Com.</div>
         </div>
     </div>
